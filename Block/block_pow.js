@@ -32,7 +32,7 @@ exports.Block = Block;
 exports.BlockChain = class BlockChain{
     constructor(){
         this.chain = [this.createGenesisBlock()];
-        this.difficulty = 5; // 计算难度
+        this.difficulty = 5; // 计算难度 - 难度越大创建区块的时间越长
 
     }
    
