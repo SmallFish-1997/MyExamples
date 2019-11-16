@@ -28,7 +28,8 @@ npm run dev
 ###### 2.1 查看区块信息
 
 ```
-get: http://10.10.1.101:6060/block_demo
+get: http://10.10.1.101:6060/block
+get: http://10.10.1.101:6060/block_pow
 ```
 
 

@@ -1,5 +1,4 @@
-// const {BlockChain,Block} = require('../Block/block');
-const {BlockChain,Block} = require('../Block/block_pow');
+const {BlockChain,Block} = require('../Block/block');
 
 module.exports = async (req, res, next) => {
     let savjeeCoin = new BlockChain();
