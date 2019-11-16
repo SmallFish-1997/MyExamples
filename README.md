@@ -10,8 +10,6 @@ router/
 --| ... 接口路由
 server.js
 --| ... nodejs服务
-
-
 ```
 
 ##### 二、运行项目
@@ -20,7 +18,6 @@ server.js
 yarn install | npm install | cnpm install
 
 npm run dev
-
 ```
 
 ###### 2.1 查看区块信息
