@@ -1,31 +1,10 @@
->  代码源于掘金：https://juejin.im/post/5aa7fd546fb9a028cc60e747
+#### Javascript学习案例整理
 
 
-##### 一、项目目录结构
-
-```
-Block/
---| ... nodejs区块链代码
-router/
---| ... 接口路由
-server.js
---| ... nodejs服务
-```
-
-##### 二、运行项目
+##### 项目案例目录
 
 ```
-yarn install | npm install | cnpm install
-
-npm run dev
-```
-
-###### 2.1 查看区块信息
+NodejsBlockChainDemo/
+--| ... nodejs实现一个极简版区块链
 
 ```
-get: http://10.10.1.101:6060/block
-get: http://10.10.1.101:6060/block_pow
-```
-
-
-
