@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hkzf/pages/search/data.dart';
-import 'package:hkzf/pages/search/list_item.dart';
 import 'package:hkzf/widgets/commonSearch.dart';
+import 'package:hkzf/widgets/room_list_item.dart';
 
 class SearchPage extends StatefulWidget {
   final List<RoomListItemData> searchList;
@@ -32,7 +32,7 @@ class SearchPageState extends State<SearchPage> {
               Expanded(
                 child: ListView(
                     children: widget.searchList
-                        .map((item) => SearchListItem(item))
+                        .map((item) => RoomListItem(item))
                         .toList()),
               )
             ],

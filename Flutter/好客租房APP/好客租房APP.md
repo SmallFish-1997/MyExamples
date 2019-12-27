@@ -202,3 +202,25 @@ class InfoComponentState extends State<InfoComponent>{
   }
 }
 ```
+
+
+
+##### 3.6 List.generate 获取遍历下标值
+```
+伪代码
+new List<int>.generate(3, (int index) => index * index);
+
+demo代码
+List.generate(
+  options.length,
+  (index) => Row(
+    children: <Widget>[
+    Radio(
+    value: index,
+    groupValue: value,
+    onChanged: onChange,
+  ),
+  Text(options[index])
+  ],
+))
+```

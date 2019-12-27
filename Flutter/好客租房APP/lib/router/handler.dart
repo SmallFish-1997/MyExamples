@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:hkzf/pages/login/index.dart';
 import 'package:hkzf/pages/login/register.dart';
 import 'package:hkzf/pages/not_found.dart';
-import 'package:hkzf/pages/profile/roomManage/index.dart';
+import 'package:hkzf/pages/room/add.dart';
 import 'package:hkzf/pages/room/detail.dart';
+import 'package:hkzf/pages/room/manage.dart';
 import 'package:hkzf/pages/setting/index.dart';
 import 'package:hkzf/pages/tabs.dart';
 
@@ -35,4 +36,8 @@ var settingPage =
 var roomManagePage =
     Handler(handlerFunc: (BuildContext context, Map<String, dynamic> params) {
   return RoomManagePage();
+});
+var roomAddPage =
+    Handler(handlerFunc: (BuildContext context, Map<String, dynamic> params) {
+  return RoomAddPage();
 });

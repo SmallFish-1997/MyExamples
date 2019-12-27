@@ -3,6 +3,7 @@ import 'package:hkzf/pages/home/info/info.dart';
 import 'package:hkzf/pages/profile/advertisement.dart';
 import 'package:hkzf/pages/profile/childEntrance.dart';
 import 'package:hkzf/pages/profile/header.dart';
+import 'package:hkzf/router/index.dart';
 import 'package:hkzf/utils/navigator_util.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -15,7 +16,7 @@ class ProfilePage extends StatelessWidget {
           actions: <Widget>[
             IconButton(
               onPressed: (){
-                NavigatorUtil.navigatorTo(context, '/setting');
+                NavigatorUtil.navigatorTo(context, Routers.setting);
               },
               icon: Icon(
                 Icons.settings,

@@ -8,6 +8,7 @@ class Routers {
   static String register = '/register';
   static String setting = '/setting';
   static String roomManage = '/roomManage';
+  static String roomAdd = '/roomAdd';
   static Router routes = Router();
   static Router configureRoutes(Router router) {
     // router = null;
@@ -18,6 +19,7 @@ class Routers {
     router.define(register, handler: registerPage);
     router.define(setting, handler: settingPage);
     router.define(roomManage, handler: roomManagePage);
+    router.define(roomAdd, handler: roomAddPage);
     router.notFoundHandler = notFound;
     routes = router;
     return router;

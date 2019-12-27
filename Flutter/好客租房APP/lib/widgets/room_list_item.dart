@@ -5,10 +5,10 @@ import 'package:hkzf/pages/search/data.dart';
 import 'package:hkzf/pages/search/tags.dart';
 import 'package:hkzf/widgets/commonImage.dart';
 var paddingSplit = Padding(padding: EdgeInsets.only(bottom: 5.0));
-class SearchListItem extends StatelessWidget {
+class RoomListItem extends StatelessWidget {
   final RoomListItemData data;
 
-  const SearchListItem(this.data, {Key key}) : super(key: key);
+  const RoomListItem(this.data, {Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
