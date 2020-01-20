@@ -5,6 +5,9 @@ import 'package:hkzf/widgets/commonFloatingActionButton.dart';
 import 'package:hkzf/widgets/room_list_item.dart';
 import 'package:hkzf/pages/search/data.dart';
 
+/**
+ * 房屋管理组件
+ * */ 
 class RoomManagePage extends StatelessWidget {
   static const tabs = ['空置', '已租'];
   final List<RoomListItemData> searchList;

@@ -21,7 +21,7 @@ var notFound =
     Handler(handlerFunc: (BuildContext context, Map<String, dynamic> params) {
   return NotFoundPage();
 });
-var roomDetail =
+var handleRoomDetail =
     Handler(handlerFunc: (BuildContext context, Map<String, dynamic> params) {
   return RoomDetailPage(roomId:params["roomId"][0]);
 });

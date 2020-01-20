@@ -29,7 +29,7 @@ List<IndexNavigatorItems> navigatorItemList = [
   IndexNavigatorItems('去出租', 'static/images/home_index_navigator_rent.png',
       (BuildContext context) {
     // Navigator.of(context).pushNamed('/room/test');
-    NavigatorUtil.navigatorTo(context,'/room/test');
+    NavigatorUtil.navigatorTo(context,'/roomDetail/test');
 
   }),
 ];

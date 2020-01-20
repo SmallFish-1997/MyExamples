@@ -4,7 +4,7 @@ import './handler.dart';
 class Routers {
   static String home = '/';
   static String login = '/login';
-  static String room = '/room/:roomId';
+  static String roomDetail = '/roomDetail/:roomId';
   static String register = '/register';
   static String setting = '/setting';
   static String roomManage = '/roomManage';
@@ -15,7 +15,7 @@ class Routers {
     // router = Router();
     router.define(home, handler: handleHome);
     router.define(login, handler: handleLogin);
-    router.define(room, handler: roomDetail);
+    router.define(roomDetail, handler: handleRoomDetail);
     router.define(register, handler: registerPage);
     router.define(setting, handler: settingPage);
     router.define(roomManage, handler: roomManagePage);

@@ -11,7 +11,6 @@ class RoomRadioItem extends StatelessWidget {
       {Key key, this.label, this.options, this.currency, this.onChange})
       : super(key: key);
 
-
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -22,7 +21,11 @@ class RoomRadioItem extends StatelessWidget {
         return Row(
             children: List.generate(
                 options.length,
-                (index) => Row(
+                (index) => GestureDetector(
+                    onTap: () {
+                      onChange(index);
+                    },
+                    child: Row(
                       children: <Widget>[
                         Radio(
                           value: index,
@@ -31,7 +34,7 @@ class RoomRadioItem extends StatelessWidget {
                         ),
                         Text(options[index])
                       ],
-                    )));
+                    ))));
       },
     ));
   }

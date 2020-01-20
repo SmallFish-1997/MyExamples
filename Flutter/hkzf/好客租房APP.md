@@ -3,10 +3,19 @@
 #### 一、简单知识记录
 
 ##### Future类型
-
-与js Promise相似，承诺返回值类型
+Future<int> - 类似JS中的Promise,<int>代表承诺返回值类型
+伪代码：
 ```
-Future<int> result;
+//1. 创建异步方法
+static Future<int> showPicker(value){
+  return 123;
+};
+//2. 调用异步方法
+var result = CommonPicker.showPicker(context: context,);
+//3. 接受返回值
+result.then((picker_val){
+  onChange(picker_val);
+});
 ```
 
 ##### Material组件 和Cupertino组件
